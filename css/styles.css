@@ -1,0 +1,157 @@
+/*************/
+/* CSS RESET */
+/*************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    line-height: 1;
+    font-weight: 400;
+    color: #555;
+    /* For mobile nav animation */
+    overflow-x: hidden;
+}
+
+strong {
+    font-weight: 500;
+}
+
+/* h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+} */
+
+/********************************************************/
+
+/********/
+/* MAIN */
+/********/
+
+.main {
+    padding: 1.6rem;
+    background-color: #F1F4F8;
+    height: 100vh;
+    display: flex;
+}
+
+/********************************************************/
+
+/***********/
+/* NAV BAR */
+/***********/
+.navbar {
+    background-color: white;
+    border-radius: 24px;
+    width: 22.9rem;
+    height: 100%;
+    padding: 3.4rem 2rem;
+    text-align: center;
+    /* margin-right: 1.6rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar-header {
+    
+}
+
+.logo {
+    margin-bottom: 5rem;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    text-decoration: none;
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    background-color: rgba(102, 95, 239, 0.2);
+    border-style: solid;
+    border-radius: 16px;
+    border-color: #793EF5;
+    color: #793EF5;
+}
+
+.nav-link p{
+    color: #1E1E1E;
+    font-size: 1.6rem;
+}
+
+.navbar-footer {
+    padding: 1.2rem 1.6rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar-footer p {
+    color: #1E1E1E;
+    font-size: 1.6rem;
+}
+
+/********************************************************/
+
+/**********************/
+/* INTERNSHIP SECTION */
+/**********************/
+
+.intenship-section {
+    background-color: yellow;
+    width: 100%;
+    margin: 5rem 5rem 0 6.6rem;
+}
+
+.internship-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.2rem;
+}
+
+.internship-header h1 {
+    color: #1E1E1E;
+    font-size: 3.2rem;
+}
+
+/********************************************************/
+
+/*************/
+/* UTILITIES */
+/*************/
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 12px;
+    border-style: none;
+    padding: 1.2rem 1.6rem;
+    background-color: #793EF5;
+    color: white;
+    font-size: 1.4rem;
+}
+
