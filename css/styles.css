@@ -3,26 +3,26 @@
 /*************/
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-family: "Space Grotesk", sans-serif;
-    line-height: 1;
-    font-weight: 400;
-    color: #555;
-    /* For mobile nav animation */
-    overflow-x: hidden;
+  font-family: "Space Grotesk", "sans-serif";
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  /* For mobile nav animation */
+  overflow-x: hidden;
 }
 
 strong {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* h2 {
@@ -37,10 +37,10 @@ strong {
 /********/
 
 .main {
-    padding: 1.6rem;
-    background-color: #F1F4F8;
-    height: 100vh;
-    display: flex;
+  padding: 1.6rem;
+  background-color: #f1f4f8;
+  /* height: 100vh; */
+  display: flex;
 }
 
 /********************************************************/
@@ -49,67 +49,64 @@ strong {
 /* NAV BAR */
 /***********/
 .navbar {
-    background-color: white;
-    border-radius: 24px;
-    width: 22.9rem;
-    height: 100%;
-    padding: 3.4rem 2rem;
-    text-align: center;
-    /* margin-right: 1.6rem; */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.navbar-header {
-    
+  background-color: white;
+  border-radius: 24px;
+  width: 22.9rem;
+  height: 100%;
+  padding: 3.4rem 2rem;
+  text-align: center;
+  /* margin-right: 1.6rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: fixed;
 }
 
 .logo {
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 .list {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 1.2rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
 .nav-link:link,
 .nav-link:visited {
-    text-decoration: none;
-    padding: 1.2rem 1.6rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-    transition: all 0.3s;
+  text-decoration: none;
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  transition: all 0.3s;
 }
 
 .nav-link:hover,
 .nav-link:active {
-    background-color: rgba(102, 95, 239, 0.2);
-    border-style: solid;
-    border-radius: 16px;
-    border-color: #793EF5;
-    color: #793EF5;
+  background-color: rgba(102, 95, 239, 0.2);
+  border-style: solid;
+  border-radius: 16px;
+  border-color: #793ef5;
+  color: #793ef5;
 }
 
-.nav-link p{
-    color: #1E1E1E;
-    font-size: 1.6rem;
+.nav-link p {
+  color: #1e1e1e;
+  font-size: 1.6rem;
 }
 
 .navbar-footer {
-    padding: 1.2rem 1.6rem;
-    display: flex;
-    gap: 1rem;
-    align-items: center;
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .navbar-footer p {
-    color: #1E1E1E;
-    font-size: 1.6rem;
+  color: #1e1e1e;
+  font-size: 1.6rem;
 }
 
 /********************************************************/
@@ -119,21 +116,110 @@ strong {
 /**********************/
 
 .intenship-section {
-    background-color: yellow;
-    width: 100%;
-    margin: 5rem 5rem 0 6.6rem;
+  width: 100%;
+  margin: 5rem 5rem 0 29.5rem;
+  position: relative;
 }
 
+/* INTERNSHIP HEADER */
+
 .internship-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 3.2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.2rem;
 }
 
 .internship-header h1 {
-    color: #1E1E1E;
-    font-size: 3.2rem;
+  color: #1e1e1e;
+  font-size: 3.2rem;
+}
+
+/* INTERNSHIP GRAPH SECTION */
+
+.internship-graph-section {
+  background-color: white;
+  border-radius: 16px;
+  padding: 1.6rem;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.4rem;
+}
+
+.internship-insights {
+  background-color: #f6f5f9;
+  border-radius: 16px;
+  padding: 1.6rem;
+  width: 28rem;
+  height: 23.8rem;
+}
+
+.internship-insights h2 {
+  color: #333;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.internship-insights p {
+  color: #1e1e1e;
+  font-size: 1.4rem;
+  letter-spacing: 0.3px;
+  line-height: 2rem;
+  padding-right: 1.9rem;
+}
+
+.internship-graph {
+  width: 100%;
+}
+
+.selection-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 16px;
+  padding: 0.8rem;
+}
+
+.time-selection {
+  display: flex;
+  gap: 1.2rem;
+}
+
+/* INTERNSHIP STATISTIC SECTION */
+
+.internship-statistic-section {
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 38.5fr 20fr 16fr 25fr 14fr;
+  background-color: yellow;
+  overflow: hidden;
+}
+
+.title {
+  padding: 1.6rem 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #2f3031;
+  background-color: #f6f5f9;
+  display: flex;
+  justify-content: space-between;
+}
+
+.internship-title-content {
+  padding: 1.6rem 17.4rem 1.6rem 1.6rem;
+}
+
+.internship-title-content h3 {
+  color: #2f3031;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+.internship-title-content p {
+  color: #2f3031;
+  font-size: 1.2rem;
 }
 
 /********************************************************/
@@ -143,15 +229,26 @@ strong {
 /*************/
 
 .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 12px;
-    border-style: none;
-    padding: 1.2rem 1.6rem;
-    background-color: #793EF5;
-    color: white;
-    font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 12px;
+  border-style: none;
+  padding: 1.2rem 1.6rem;
+  background-color: #793ef5;
+  color: white;
+  font-size: 1.4rem;
+  cursor: pointer;
 }
 
+.btn-small {
+  font-size: 1.4rem;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+}
+
+.btn-white {
+  background-color: white;
+  color: #1e1e1e;
+}
